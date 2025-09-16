@@ -56,10 +56,10 @@ class buku extends BaseController
                 'judul' => $this->request->getVar('judul'),
                 'pengarang' => $this->request->getVar('pengarang'),
                 'sampul' => $this->request->getVar('sampul'),
-                'tahun' => $this->request->getVar('tahun')
+                'tahun_terbit' => $this->request->getVar('tahun_terbit')
             ]
         );
-
+        session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
         return redirect()->to('/buku');
     }
 }

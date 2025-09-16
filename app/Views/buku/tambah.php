@@ -23,7 +23,7 @@
         <div class="from-group row">
             <label for="inputtahun" class="form-label">Tahun Terbit</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="tahun" value="<?= old('tahun'); ?>">
+                <input type="text" class="form-control" name="tahun_terbit" value="<?= old('tahun_terbit'); ?>">
             </div>
         </div>
         <div class="from-group row">
